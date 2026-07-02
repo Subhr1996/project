@@ -1,0 +1,15 @@
+{
+	"name": "SOURCE-ADF1996",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "00e773fa-7770-4cb4-968e-98263ef44a72",
+		"tenantId": "17987c35-2c27-4f81-8a60-ba808d3284b4"
+	}
+}
