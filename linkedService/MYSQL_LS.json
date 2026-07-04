@@ -1,0 +1,28 @@
+{
+	"name": "MYSQL_LS",
+	"properties": {
+		"annotations": [],
+		"type": "MySql",
+		"typeProperties": {
+			"server": "localhost",
+			"port": 3306,
+			"database": "AZURE",
+			"username": "root",
+			"sslMode": 0,
+			"password": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "SQL_KEY",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "sql1",
+				"secretVersion": "695d155923e7486e80c02117bc41d0b7"
+			},
+			"driverVersion": "v2"
+		},
+		"connectVia": {
+			"referenceName": "integrationRuntime1",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
